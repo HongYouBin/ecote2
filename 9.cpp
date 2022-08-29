@@ -13,7 +13,7 @@ int solution(string s) {
             string curS;
             for (int t = j; t < i + j; t++) {
                 if (t > s.size() - 1) continue;
-                 curS += s[t];
+                curS += s[t];
             }
             if (curS == prevS) {
                 cnt++;
@@ -35,9 +35,4 @@ int solution(string s) {
         answer = min(answer, cSize);
     }
     return answer;
-}
-
-int main() {
-    string s = "abcabcdede";
-    cout << solution(s);
 }
