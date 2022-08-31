@@ -46,3 +46,15 @@ https://github.com/HongYouBin/ecote2/blob/main/10.cpp
 https://www.acmicpc.net/problem/3190
 
 https://github.com/HongYouBin/ecote2/blob/main/11.cpp
+
+### 12번 기둥과 보 설치 329p
+
+https://school.programmers.co.kr/learn/courses/30/lessons/60061
+
+https://github.com/HongYouBin/ecote2/blob/main/12.cpp
+
+- 17행) 보의 양쪽 끝부분이 다른 보와 동시에 연결되어 있어야 한다는 조건을 실수했다. 한쪽 보의 끝부분이 다른 보와 연결되어 있는 경우도 참이 되도록 했다. 문제를 꼼꼼하게 읽고 구현해야 한다. 조건이 까다로운 경우 주석처리로 처리해야 하는 조건을 명시하는 방법을 사용할 예정이다.
+- 2차원 vector를 정렬할 때 따로 정렬 조건을 넣지 않으면 vector의 순서를 기준으로 (첫 번째 기준:vt[0], 두 번재 기준:vt[1], 세 번재 기준:vt[2] ... ) 정렬된다.
+- https://leeeegun.tistory.com/5
+- https://twinkite.tistory.com/entry/C-2%EC%B0%A8%EC%9B%90-%EB%B2%A1%ED%84%B0-%EC%A0%95%EB%A0%ACsort
+- https://learncom1234.tistory.com/6
