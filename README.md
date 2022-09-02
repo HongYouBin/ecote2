@@ -58,3 +58,19 @@ https://github.com/HongYouBin/ecote2/blob/main/12.cpp
 - https://leeeegun.tistory.com/5
 - https://twinkite.tistory.com/entry/C-2%EC%B0%A8%EC%9B%90-%EB%B2%A1%ED%84%B0-%EC%A0%95%EB%A0%ACsort
 - https://learncom1234.tistory.com/6
+
+### 13번 치킨 배달 332p
+
+https://www.acmicpc.net/problem/15686
+
+https://github.com/HongYouBin/ecote2/blob/main/13.cpp
+
+### 14번 외벽 점검 335p
+
+https://school.programmers.co.kr/learn/courses/30/lessons/60062
+
+https://github.com/HongYouBin/ecote2/blob/main/14.cpp
+
+- 처음 문제와 비슷하게 완전탐색이 아닌 그리디한 방법을 이용하려 했다. dist 배열이 큰 수부터 청소를 시작하게 만들면 된다고 생각했다. 그리디한 방법으로 구현하면 오류가 나는데 왜 그런지 이유와 케이스를 아직 찾지 못했다.
+- next_permutation()은 순열을 만들 때 오름차순에서 점점 내림차순으로 만든다.
+  - https://hanil0623.tistory.com/2
