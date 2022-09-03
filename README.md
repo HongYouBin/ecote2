@@ -74,3 +74,23 @@ https://github.com/HongYouBin/ecote2/blob/main/14.cpp
 - 처음 문제와 비슷하게 완전탐색이 아닌 그리디한 방법을 이용하려 했다. dist 배열이 큰 수부터 청소를 시작하게 만들면 된다고 생각했다. 그리디한 방법으로 구현하면 오류가 나는데 왜 그런지 이유와 케이스를 아직 찾지 못했다.
 - next_permutation()은 순열을 만들 때 오름차순에서 점점 내림차순으로 만든다.
   - https://hanil0623.tistory.com/2
+
+### 17번 경쟁적 전염 344p
+
+https://www.acmicpc.net/problem/18405
+
+https://github.com/HongYouBin/ecote2/blob/main/17.cpp
+
+- bfs를 사용해야하는 구현문제이다.
+
+### 18번 괄호 변환 346p
+
+https://school.programmers.co.kr/learn/courses/30/lessons/60058
+
+https://github.com/HongYouBin/ecote2/blob/main/18.cpp
+
+### 19번 연산자 끼워 넣기 349p
+
+https://www.acmicpc.net/problem/14888
+
+https://github.com/HongYouBin/ecote2/blob/main/19.cpp
