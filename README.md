@@ -94,3 +94,19 @@ https://github.com/HongYouBin/ecote2/blob/main/18.cpp
 https://www.acmicpc.net/problem/14888
 
 https://github.com/HongYouBin/ecote2/blob/main/19.cpp
+
+### 20번 감시 피하기 351p
+
+https://www.acmicpc.net/problem/18248
+
+https://github.com/HongYouBin/ecote2/blob/main/20.cpp
+
+### 21번 인구 이동 353p
+
+https://www.acmicpc.net/problem/16234
+
+https://github.com/HongYouBin/ecote2/blob/main/21.cpp
+
+- bfs로 구현했다.
+- 처음 설계 과정에서 종료조건을 설정하지 않아 애먹었다. 초기 설계를 정확하게 해야 한다.
+- 답은 bfs를 몇번 했는지를 센 값이 map의 크기과 같으면 종료하도록 했다. 나의 풀이보다 간단하고 빠르다.
