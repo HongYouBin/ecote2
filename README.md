@@ -110,3 +110,49 @@ https://github.com/HongYouBin/ecote2/blob/main/21.cpp
 - bfs로 구현했다.
 - 처음 설계 과정에서 종료조건을 설정하지 않아 애먹었다. 초기 설계를 정확하게 해야 한다.
 - 답은 bfs를 몇번 했는지를 센 값이 map의 크기과 같으면 종료하도록 했다. 나의 풀이보다 간단하고 빠르다.
+
+### 22번 블록 이동하기 355p
+
+https://school.programmers.co.kr/learn/courses/30/lessons/60063
+
+https://github.com/HongYouBin/ecote2/blob/main/22.cpp
+
+- 24행 turn 함수 구현이 가장 까다로웠다. 정확하게 설계한 후, 실수 없도록 구현해야 한다.
+- 54행) 이동해야 하는 두 번째 블록의 좌표를 구할 때 실수를 했다.
+- 24행 turn 함수와 13행 move 함수 모두 2차원 vector를 인수로 받을 때 시간 절약을 위해 참조로 받았다. 복사의 시간 비용이 큰 경우 참조로 받아야 한다.
+
+### 24번 안테나 360p
+
+https://www.acmicpc.net/problem/18310
+
+https://github.com/HongYouBin/ecote2/blob/main/24.cpp
+
+### 25번 실패율 361p
+
+https://school.programmers.co.kr/learn/courses/30/lessons/42889
+
+https://github.com/HongYouBin/ecote2/blob/main/25.cpp
+
+- 실패율 계산할 때 int가 아닌 double로 실수 형태로 받아야 한다. 형 변환이 필요하다.
+  - https://ju3un.github.io/c++-type-casting/
+- 스테이지에 도달한 유저가 없는 경우 해당 스테이지의 실패율은 0 으로 정의한다는 조건을 빼먹었다. 문제를 정확하게 읽고 구현해야 한다.
+
+### 26번 카드 정렬하기 363p
+
+https://school.programmers.co.kr/learn/courses/30/lessons/1715
+
+https://github.com/HongYouBin/ecote2/blob/main/26.cpp
+
+### 27번 정렬된 배열에서 특정 수의 개수 구하기 367p
+
+https://github.com/HongYouBin/ecote2/blob/main/27.cpp
+
+- lower_bound(), upper_bound() 사용
+
+### 28번 공유기 설치 369p
+
+https://www.acmicpc.net/problem/2110
+
+https://github.com/HongYouBin/ecote2/blob/main/28.cpp
+
+- 설치된 공유기 수와 설정한 공유기 사이의 거리는 반비례한다. 공유기 수가 c보다 크면 거리를 늘려 공유기 수를 줄여야 하고, 반대로 공유기 수가 c보다 작으면 거리를 줄여 공유기 수를 늘려야 한다.
