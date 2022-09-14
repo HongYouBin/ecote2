@@ -149,10 +149,38 @@ https://github.com/HongYouBin/ecote2/blob/main/27.cpp
 
 - lower_bound(), upper_bound() 사용
 
-### 28번 공유기 설치 369p
+### 29번 공유기 설치 369p
 
 https://www.acmicpc.net/problem/2110
 
 https://github.com/HongYouBin/ecote2/blob/main/28.cpp
 
 - 설치된 공유기 수와 설정한 공유기 사이의 거리는 반비례한다. 공유기 수가 c보다 크면 거리를 늘려 공유기 수를 줄여야 하고, 반대로 공유기 수가 c보다 작으면 거리를 줄여 공유기 수를 늘려야 한다.
+
+### 30번 가사 검색 370p
+
+https://school.programmers.co.kr/learn/courses/30/lessons/60060
+
+https://github.com/HongYouBin/ecote2/blob/main/30.cpp
+
+### 33번 퇴사 377p
+
+https://www.acmicpc.net/problem/14501
+
+https://github.com/HongYouBin/ecote2/blob/main/33_1.cpp
+https://github.com/HongYouBin/ecote2/blob/main/33_2.cpp
+
+- dp[i]를 i일까지 얻을 수 있는 최대 수익이라고 설정했고 n일부터 1일까지 순서대로 dp 테이블을 채웠다. 설정에 맞게 세운 점화식은 dp[i] = dp[i + t[i]] + p[i]이다. 이때 점화식이 완벽한 것은 아닌데 i일에 상담하지 않은 경우의 수를 따져줘야 한다. 따라서 i일 이후의 최대값과 dp[i] = dp[i + t[i]] + p[i] 값 중 큰 값으로 dp 테이블을 채워야 한다.
+- t[i] + i > n + 1 인 경우에 무시하고 지나갔는데, dp[i] = 0이 된다. 그 말은 i일까지 얻을 수 있는 최대 수익이 0이라는 뜻으로 나중에 dp[i]를 참고할 수 있으므로 오답이 된다. 따라서 i일 이후의 최대값으로 해야 정답이 된다.
+- 33_2는 완전탐색으로 구현했다.
+
+### 34번 병사 배치하기 380p
+
+https://www.acmicpc.net/problem/18353
+
+https://github.com/HongYouBin/ecote2/blob/main/34_1.cpp
+https://github.com/HongYouBin/ecote2/blob/main/34_2.cpp
+
+- 34_1) dp중 가장 긴 증가하는 수열을 응용하면 풀었다. 시간복잡도는 O(N\*N)이 걸렸다.
+- binary search로도 해당 문제를 풀 수 있다. 원래는 가장 긴 증가하는 수열로 이분탐색을 하는데 문제는 감소하는 조건이 있기 때문에 처음 입력을 할 때 음수로 넣고, 가장 긴 증가하는 수열로 풀었다.
+  - https://st-lab.tistory.com/285
