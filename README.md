@@ -184,3 +184,9 @@ https://github.com/HongYouBin/ecote2/blob/main/34_2.cpp
 - 34_1) dp중 가장 긴 증가하는 수열을 응용하면 풀었다. 시간복잡도는 O(N\*N)이 걸렸다.
 - binary search로도 해당 문제를 풀 수 있다. 원래는 가장 긴 증가하는 수열로 이분탐색을 하는데 문제는 감소하는 조건이 있기 때문에 처음 입력을 할 때 음수로 넣고, 가장 긴 증가하는 수열로 풀었다.
   - https://st-lab.tistory.com/285
+
+### 34번 병사 배치하기 380p
+
+https://github.com/HongYouBin/ecote2/blob/main/36.cpp
+
+- 19행) s1[i-1] != s2[j-1]인 경우 arr[i][j-1] (추가), arr[i-1][j] (삭제), arr[i-1][j-1] (교체) 중 가장 작은 수에 1을 더한 값으로 테이블을 채운다.
