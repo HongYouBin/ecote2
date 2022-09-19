@@ -185,8 +185,37 @@ https://github.com/HongYouBin/ecote2/blob/main/34_2.cpp
 - binary search로도 해당 문제를 풀 수 있다. 원래는 가장 긴 증가하는 수열로 이분탐색을 하는데 문제는 감소하는 조건이 있기 때문에 처음 입력을 할 때 음수로 넣고, 가장 긴 증가하는 수열로 풀었다.
   - https://st-lab.tistory.com/285
 
-### 34번 병사 배치하기 380p
+### 36번 편집 거리 382p
 
 https://github.com/HongYouBin/ecote2/blob/main/36.cpp
 
 - 19행) s1[i-1] != s2[j-1]인 경우 arr[i][j-1] (추가), arr[i-1][j] (삭제), arr[i-1][j-1] (교체) 중 가장 작은 수에 1을 더한 값으로 테이블을 채운다.
+
+### 37번 플로이드 385p
+
+https://github.com/HongYouBin/ecote2/blob/main/37.cpp
+
+https://www.acmicpc.net/problem/11404
+
+- 플로이드 워셜 알고리즘 사용하면 된다.
+  - 23행부터 30행까지 플로이드 워셜 알고리즘을 구현했다. 처음 알고리즘을 구현할 때 실수를 했다. 플로이드 워셜 알고리즘안에 for문이 총 3가지가 있다. 그 중 k로 시작하는 for문이 첫 번째 for문이어야 하는데, 세 번째 for문으로 돌도록 구현했다.
+    - k가 거쳐가는 노드인데 첫 번째 노드부터 마지막 노드 모두 거쳐가는 노드를 돌기 위해서 바깥에 존재해야 한다.
+
+### 38번 정확한 순위 387p
+
+https://github.com/HongYouBin/ecote2/blob/main/38.cpp
+
+- 플로이드 워셜 알고리즘 사용했다. 성적을 오름차순으로 받는 배열, 내림차순으로 받는 배열을 만들었다. 두 배열 중 i행 j열이 0이 아니면 i와 j간의 순위가 결정할 수 있다.
+- 배열 1개로 만들어 배열을 아낄 수 있는데, 하나의 배열로 플로이드 워셜 알고리즘을 진행한 후 arr[i][j]와 arr[j][i] 두 개의 수를 비교하여 i와 j의 순위를 비교할 수 있다.
+
+### 39번 화성 탐사 388p
+
+https://github.com/HongYouBin/ecote2/blob/main/39.cpp
+
+- 다익스트라 알고리즘 이용했다. 에너지 소모량이 적힌 2차원 배열을 참조하여 i행 j열에 방문한다면, 기존 사용한 에너지 소모량에 i행 j열에 적힌 에너지 소모량을 더해 최단 경로 알고리즘을 구현했다.
+
+### 40번 숨바꼭질 390p
+
+https://github.com/HongYouBin/ecote2/blob/main/40.cpp
+
+- 다익스트라 알고리즘 이용했다. vector 배열을 이용하여 그래프를 구현했다.
