@@ -219,3 +219,10 @@ https://github.com/HongYouBin/ecote2/blob/main/39.cpp
 https://github.com/HongYouBin/ecote2/blob/main/40.cpp
 
 - 다익스트라 알고리즘 이용했다. vector 배열을 이용하여 그래프를 구현했다.
+
+### 41번 여행 계획 393p
+
+https://github.com/HongYouBin/ecote2/blob/main/41.cpp
+
+- 서로소 집합 이용했다.
+- https://www.acmicpc.net/problem/1976 백준에서 비슷한 문제를 찾아 풀었다.

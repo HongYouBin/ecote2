@@ -32,7 +32,7 @@ int main() {
 			if (r == n - 1 && c == n - 1) break;
 			for (int i = 0; i < 4; ++i) {
 				int nxtR = r + dx[i], nxtC = c + dy[i];
-				if (nxtR < 0 || n <= nxtR || nxtC < 0 || n <= nxtC || visited[nxtR][nxtC] !=inf) continue;
+				if (nxtR < 0 || n <= nxtR || nxtC < 0 || n <= nxtC || visited[nxtR][nxtC] != inf) continue;
 				int nxtCst = cst + arr[nxtR][nxtC];
 				visited[nxtR][nxtC] = nxtCst;
 				pq.push({ -nxtCst, {nxtR, nxtC} });
