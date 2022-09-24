@@ -226,3 +226,17 @@ https://github.com/HongYouBin/ecote2/blob/main/41.cpp
 
 - 서로소 집합 이용했다.
 - https://www.acmicpc.net/problem/1976 백준에서 비슷한 문제를 찾아 풀었다.
+
+### 42번 탑승구 395p
+
+https://github.com/HongYouBin/ecote2/blob/main/42.cpp
+
+- https://www.acmicpc.net/problem/10775 백준에서 비슷한 문제를 찾아 풀었다.
+- 그리디하게 접근할 수 있는 문제이다. 비행기가 도착했을 때 도킹할 수 있는 가장 낮은 탑승구에 도킹하면 된다. 문제는 그리디를 구현할 때 시간초과가 발생한다. 따라서 서로소 집합 알고리즘을 사용해야 한다. parent[i]는 i번째 탑승구까지 도킹할 수 있는 비행기가 도착했을 때 도킹할 수 있는 가장 낮은 탑승구라고 설정하면 parent[i]가 0이면 도킹에 실패한다. i번째 비행기가 도킹하면 parent[i]를 갱신해줘야 하는데, 똑같이 i 비행기가 도착하면 도킹할 수 있는 가장 낮은 탐승구는 parent[i]-1이 된다. 따라서 parent[i]와 parent[i]-1을 merge 해줘야 한다.
+
+### 43 어두운 길 397p
+
+https://github.com/HongYouBin/ecote2/blob/main/42.cpp
+
+- https://www.acmicpc.net/problem/6497
+- 크루스칼 알고리즘 이용했다.
