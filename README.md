@@ -236,7 +236,25 @@ https://github.com/HongYouBin/ecote2/blob/main/42.cpp
 
 ### 43 어두운 길 397p
 
-https://github.com/HongYouBin/ecote2/blob/main/42.cpp
+https://github.com/HongYouBin/ecote2/blob/main/43.cpp
 
 - https://www.acmicpc.net/problem/6497
 - 크루스칼 알고리즘 이용했다.
+
+### 44 행성 터널 398p
+
+https://github.com/HongYouBin/ecote2/blob/main/44.cpp
+
+https://www.acmicpc.net/problem/2887
+
+- 크루스칼 알고리즘 사용
+- 참고해야하는 edge를 모든 경우의 수를 따지면 시간초과가 발생한다. edge 수를 줄여야 한다. x, y, z를 각각 배열로 받은 후 정렬하여 배열에서 가까운 요소끼리 절대값을 씌우고 빼준 edge만 참고하면 된다.
+
+### 45 최종 순위p
+
+https://github.com/HongYouBin/ecote2/blob/main/45.cpp
+
+https://www.acmicpc.net/problem/3665
+
+- 위상정렬 사용
+- 위상정렬의 결과값으로 3가지가 나올 수 있다. 첫 번째는 경우의 수가 1개밖에 없는 결과이다. indgree가 0인 index를 받기 위해 만든 queue가 항상 1을 유지하면 가능하다. 두 번째는 경우의 수가 2개 이상인 경우이다. queue의 크기가 2이상이 되면 위상정렬의 결과가 다양해진다. 세 번째는 순환을 돌아 결과값을 만들지 못하는 경우이다. queue 크기가 0이면 순환이 발생한다.
